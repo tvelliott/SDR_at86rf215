@@ -1,0 +1,17 @@
+tuner board
+--------------------
+yellow miso PB14    GIO5
+white sck PB13      GIO6
+red mosi PB15       GIO4
+black tuner_cs  PC7  GIO2
+
+
+SDR H7 board
+-----------------
+
+DISP_RST  miso  yellow      disp_pin 1
+DISP_RS   sck   white       disp_pin 2
+DISP_CSB  mosi  red         disp_pin 3
+DISP_SCL  tuner_cs  black   disp_pin 4
+
+
