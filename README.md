@@ -7,6 +7,6 @@ Firmware and HDL was written and operational in 2018. It supports stand-alone re
 <BR>In the firmware directory, create a symbolic link to the toolchain: e.g.  ln -s ../gcc-arm-none-eabi-7-2018-q2-update arm-toolchain
 <BR>Then type 'make'
 <BR>
-<img src="https://raw.githubusercontent.com/tvelliott/SDR_at86rf215/main/images/SDR_at86rf215.png">
-<BR>
 To compile the verilog code and place-route for the FPGA, you will need to install project ice-storm and nextpnr
+<BR>
+<img src="https://raw.githubusercontent.com/tvelliott/SDR_at86rf215/main/images/SDR_at86rf215.png">
