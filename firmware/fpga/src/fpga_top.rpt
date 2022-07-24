@@ -1,0 +1,52 @@
+
+icetime topological timing analysis report
+==========================================
+
+Info: max_span_hack is enabled: estimate is conservative.
+
+Report for critical path:
+-------------------------
+
+        lc40_27_20_5 (LogicCell40) [clk] -> lcout: 0.640 ns
+     0.640 ns net_107104 (addr_in[11])
+        odrv_27_20_107104_107126 (Odrv4) I -> O: 0.372 ns
+        t4133 (LocalMux) I -> O: 0.330 ns
+        inmux_27_21_111347_111403 (InMux) I -> O: 0.260 ns
+        lc40_27_21_5 (LogicCell40) in0 -> lcout: 0.449 ns
+     2.050 ns net_107227 ($abc$19190$n812_1)
+        t4145 (LocalMux) I -> O: 0.330 ns
+        inmux_26_22_107391_107434 (InMux) I -> O: 0.260 ns
+        lc40_26_22_2 (LogicCell40) in3 -> lcout: 0.316 ns
+     2.954 ns net_103471 ($abc$19190$n507)
+        odrv_26_22_103471_107486 (Odrv4) I -> O: 0.372 ns
+        t4060 (LocalMux) I -> O: 0.330 ns
+        inmux_27_22_111472_111541 (InMux) I -> O: 0.260 ns
+        lc40_27_22_7 (LogicCell40) in3 -> lcout: 0.316 ns
+     4.231 ns net_107352 ($abc$19190$n805_1)
+        t4171 (LocalMux) I -> O: 0.330 ns
+        inmux_27_22_111494_111505 (InMux) I -> O: 0.260 ns
+        lc40_27_22_1 (LogicCell40) in3 -> lcout: 0.316 ns
+     5.136 ns net_107346 ($abc$19190$n7)
+        odrv_27_22_107346_111186 (Odrv12) I -> O: 0.540 ns
+        t4181 (Sp12to4) I -> O: 0.449 ns
+        t4180 (Span4Mux_h4) I -> O: 0.316 ns
+        t4179 (Span4Mux_h4) I -> O: 0.316 ns
+        t4178 (Span4Mux_v4) I -> O: 0.372 ns
+        t4177 (IoSpan4Mux) I -> O: 0.323 ns
+        t4176 (LocalMux) I -> O: 0.330 ns
+        t4175 (IoInMux) I -> O: 0.260 ns
+        t4174 (ICE_GB) USERSIGNALTOGLOBALBUFFER -> GLOBALBUFFEROUTPUT: 0.617 ns
+        t4173 (gio2CtrlBuf) I -> O: 0.000 ns
+        t4172 (GlobalMux) I -> O: 0.154 ns
+     8.811 ns seg_26_21_glb_netwk_4_5
+
+Resolvable net names on path:
+     0.640 ns ..  1.601 ns addr_in[11]
+     2.050 ns ..  2.639 ns $abc$19190$n812_1
+     2.954 ns ..  3.915 ns $abc$19190$n507
+     4.231 ns ..  4.820 ns $abc$19190$n805_1
+     5.136 ns ..  5.676 ns $abc$19190$n7
+
+Total number of logic levels: 5
+Total path delay: 8.81 ns (113.50 MHz)
+
