@@ -10,3 +10,7 @@ Firmware and HDL was written and operational in 2018. It supports stand-alone re
 To compile the verilog code and place-route for the FPGA, you will need to install project ice-storm and nextpnr
 <BR>
 <img src="https://raw.githubusercontent.com/tvelliott/SDR_at86rf215/main/images/SDR_at86rf215.png">
+<BR>
+External Tuner PCB
+<BR>
+<img src="https://github.com/tvelliott/SDR_at86rf215/blob/main/images/ext_tuner_pcb.png">
