@@ -14,3 +14,7 @@ To compile the verilog code and place-route for the FPGA, you will need to insta
 VHF/UHF Tuner PCB, IF output is 914 MHz and fed to the AT86RF215 receiver.
 <BR>
 <img src="https://github.com/tvelliott/SDR_at86rf215/blob/main/images/ext_tuner_pcb.png">
+<BR>
+FPGA Routing / Usage
+<BR>
+<img src="https://github.com/tvelliott/SDR_at86rf215/blob/main/images/fpga_place1.png">
