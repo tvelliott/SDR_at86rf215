@@ -9,9 +9,11 @@ Firmware and HDL was written and operational in 2018. It supports stand-alone re
 <BR>
 To compile the verilog code and place-route for the FPGA, you will need to install project ice-storm and nextpnr
 <BR>
+<BR>
+AT86RF215 12-bit I/Q Reeiver PCB / ICE40 BGA-256 FPGA / STM32H743 MCU / 100Mbps Ethernet / Stereo I2S Audio
 <img src="https://raw.githubusercontent.com/tvelliott/SDR_at86rf215/main/images/SDR_at86rf215.png">
 <BR>
-VHF/UHF Tuner PCB, IF output is 914 MHz and fed to the AT86RF215 receiver.
+Dual-antenna VHF/UHF Tuner PCB (1MHz to 1200 MHz), IF output is 914 MHz and fed to the AT86RF215 receiver.
 <BR>
 <img src="https://github.com/tvelliott/SDR_at86rf215/blob/main/images/ext_tuner_pcb.png">
 <BR>
