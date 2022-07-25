@@ -7,7 +7,8 @@ Firmware and HDL was written and operational in 2018. It supports stand-alone re
 <BR>In the firmware directory, create a symbolic link to the toolchain: e.g.  ln -s ../gcc-arm-none-eabi-7-2018-q2-update arm-toolchain
 <BR>Then type 'make'
 <BR>
-To compile the verilog code and place-route for the FPGA, you will need to install project ice-storm and nextpnr
+<BR>
+To compile the verilog code and place-route for the FPGA, you will need to install project ice-storm and nextpnr. In order to run the testbench for the DDR verilog code, you will also need to install iverilog and gtkwave.
 <BR>
 <BR>
 AT86RF215 12-bit I/Q Reeiver PCB / ICE40 BGA-256 FPGA / STM32H743 MCU / 100Mbps Ethernet / Stereo I2S Audio
