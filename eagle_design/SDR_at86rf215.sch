@@ -14216,17 +14216,6 @@ chip</description>
 <smd name="RF" x="4.5" y="0" dx="5" dy="2.1" layer="1" rot="R90" cream="no"/>
 <text x="1.6" y="5.8" size="1.778" layer="25" rot="R90">&gt;NAME</text>
 </package>
-<package name="WW107">
-<circle x="0.0254" y="0" radius="0.894784375" width="0.127" layer="21"/>
-<circle x="0" y="-0.7366" radius="0.297296875" width="0.127" layer="21"/>
-<circle x="0.5842" y="-0.9398" radius="0.05679375" width="0.127" layer="21"/>
-<circle x="-0.6096" y="-0.9652" radius="0.08031875" width="0.127" layer="21"/>
-<smd name="1" x="0" y="-2" dx="1.829" dy="0.8128" layer="1" rot="R90"/>
-<smd name="2" x="2" y="0" dx="1.829" dy="0.8128" layer="1" rot="R180"/>
-<smd name="3" x="0" y="2" dx="1.829" dy="0.8128" layer="1" rot="R270"/>
-<smd name="4" x="-2" y="0" dx="1.829" dy="0.8128" layer="1" rot="R180"/>
-<text x="1.27" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
 <symbol name="C-US">
@@ -14263,19 +14252,6 @@ chip</description>
 <pin name="GND3" x="-7.62" y="0" visible="off" length="middle" direction="pwr"/>
 <pin name="GND4" x="-7.62" y="-2.54" visible="off" length="middle" direction="pwr"/>
 <pin name="RF" x="-7.62" y="5.08" visible="off" length="middle" direction="pas"/>
-</symbol>
-<symbol name="AMPBLOCK">
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="7.62" y1="0" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<pin name="1" x="-15.24" y="0" visible="pad" length="middle" direction="pas"/>
-<pin name="2" x="0" y="-7.62" visible="pad" length="middle" direction="pas" rot="R90"/>
-<pin name="3" x="12.7" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
-<pin name="4" x="-2.54" y="-7.62" visible="pad" length="middle" direction="pas" rot="R90"/>
-<text x="-7.62" y="2.54" size="1.778" layer="94">MC</text>
-<text x="-7.62" y="0" size="1.778" layer="94">WW107</text>
-<text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="L">
 <wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94" curve="270"/>
@@ -14397,24 +14373,6 @@ chip</description>
 <connect gate="G$1" pin="GND3" pad="GND2"/>
 <connect gate="G$1" pin="GND4" pad="GND4"/>
 <connect gate="G$1" pin="RF" pad="RF"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAR-8ASM" prefix="Q">
-<gates>
-<gate name="G$1" symbol="AMPBLOCK" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="WW107">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14900,16 +14858,6 @@ chip</description>
 <smd name="C" x="0.7872" y="-0.0254" dx="0.8128" dy="0.8128" layer="1"/>
 <text x="-0.9652" y="1.397" size="1.016" layer="25">&gt;NAME</text>
 </package>
-<package name="MINICIRCUITS_FV1206">
-<smd name="3" x="0.0508" y="0.9398" dx="0.6096" dy="1.2446" layer="1"/>
-<smd name="4" x="0.0508" y="-0.9144" dx="0.6096" dy="1.2446" layer="1"/>
-<pad name="5" x="0.0508" y="1.0922" drill="0.3048" diameter="0.4064"/>
-<pad name="6" x="0.0508" y="-1.0922" drill="0.3048" diameter="0.4064"/>
-<smd name="IN" x="-1.5748" y="0" dx="1.0414" dy="1.8034" layer="1"/>
-<smd name="OUT" x="1.6764" y="0" dx="1.0414" dy="1.8034" layer="1"/>
-<text x="-2.3876" y="1.9812" size="1.016" layer="25">&gt;NAME</text>
-<rectangle x1="-0.9906" y1="-1.5494" x2="-0.4826" y2="1.4986" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="DIODE">
@@ -14925,22 +14873,6 @@ chip</description>
 <text x="-7.62" y="10.16" size="1.27" layer="95">&gt;NAME</text>
 <text x="-7.62" y="7.62" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="MINICIRCUITS_LPF">
-<wire x1="-12.7" y1="10.16" x2="17.78" y2="10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="10.16" y2="0" width="0.254" layer="94"/>
-<pin name="GND@1" x="-5.08" y="-15.24" length="middle" direction="pas" rot="R90"/>
-<pin name="GND@2" x="0" y="-15.24" length="middle" direction="pas" rot="R90"/>
-<pin name="GND@3" x="5.08" y="-15.24" length="middle" direction="pas" rot="R90"/>
-<pin name="GND@4" x="10.16" y="-15.24" length="middle" direction="pas" rot="R90"/>
-<pin name="IN" x="-17.78" y="2.54" length="middle" direction="pas"/>
-<pin name="OUT" x="22.86" y="2.54" length="middle" direction="pas" rot="R180"/>
-<text x="-10.16" y="15.24" size="1.27" layer="95">&gt;NAME</text>
-<text x="-10.16" y="12.7" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SMP1321-079LF" prefix="D">
@@ -14952,26 +14884,6 @@ chip</description>
 <connects>
 <connect gate="A" pin="A" pad="A"/>
 <connect gate="A" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MINICIRCUITS_FV1206" prefix="FLT">
-<gates>
-<gate name="A" symbol="MINICIRCUITS_LPF" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="MINICIRCUITS_FV1206">
-<connects>
-<connect gate="A" pin="GND@1" pad="3"/>
-<connect gate="A" pin="GND@2" pad="4"/>
-<connect gate="A" pin="GND@3" pad="5"/>
-<connect gate="A" pin="GND@4" pad="6"/>
-<connect gate="A" pin="IN" pad="IN"/>
-<connect gate="A" pin="OUT" pad="OUT"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15624,7 +15536,6 @@ chip</description>
 <part name="H6" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8" value="2.8mm"/>
 <part name="FID7" library="misclib2" deviceset="FIDUCIAL" device="SMD"/>
 <part name="FID8" library="misclib2" deviceset="FIDUCIAL" device="SMD"/>
-<part name="C31" library="m64library" deviceset="C-US" device="C0603" value="100pF"/>
 <part name="SUPPLY4" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="DGND" device=""/>
 <part name="SUPPLY26" library="supply2" deviceset="DGND" device=""/>
@@ -15676,14 +15587,6 @@ chip</description>
 <part name="BAL1" library="tdk" deviceset="BALUN_TDK_HHM1522B1" device="B" value="2450FB15A0100"/>
 <part name="SUPPLY100" library="supply2" deviceset="AGND" device=""/>
 <part name="C33" library="m64library" deviceset="C-US" device="C0603" value="100pF"/>
-<part name="Q1" library="m64library" deviceset="MAR-8ASM" device="" value="MAR6-SM+"/>
-<part name="R12" library="resistor" deviceset="R-US_" device="R1206" value="82"/>
-<part name="C34" library="m64library" deviceset="C-US" device="C0402" value="10nF"/>
-<part name="C35" library="m64library" deviceset="C-US" device="C0402" value="33pF"/>
-<part name="SUPPLY101" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY110" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY112" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY113" library="supply2" deviceset="AGND" device=""/>
 <part name="L15" library="m64library" deviceset="INDUCTOR" device="L0603" value="12nH"/>
 <part name="SUPPLY137" library="supply2" deviceset="AGND" device=""/>
 <part name="J6" library="amp_ufl" deviceset="AMPHENOL_A-1JB" device=""/>
@@ -15692,7 +15595,6 @@ chip</description>
 <part name="SUPPLY138" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY139" library="supply2" deviceset="AGND" device=""/>
 <part name="J4" library="amp_ufl" deviceset="AMPHENOL_A-1JB" device=""/>
-<part name="C38" library="m64library" deviceset="C-US" device="C0603" value="100pF"/>
 <part name="SUPPLY140" library="supply2" deviceset="AGND" device=""/>
 <part name="FB4" library="wuerth-elektronik" deviceset="WE-CBF" device="_0603"/>
 <part name="FB5" library="wuerth-elektronik" deviceset="WE-CBF" device="_0603"/>
@@ -15724,14 +15626,7 @@ chip</description>
 <part name="SUPPLY153" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY154" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY155" library="supply2" deviceset="AGND" device=""/>
-<part name="L2" library="m64library" deviceset="INDUCTOR" device="L0603" value="120nH"/>
-<part name="L3" library="m64library" deviceset="INDUCTOR" device="L0603" value="120nH"/>
 <part name="TP2" library="testpad" deviceset="PTR1" device="TP08R" value="PTR1TP08R"/>
-<part name="FLT2" library="195_est_library" deviceset="MINICIRCUITS_FV1206" device="SMD" value="HFCN-440D+"/>
-<part name="SUPPLY115" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY126" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY127" library="supply2" deviceset="AGND" device=""/>
-<part name="SUPPLY156" library="supply2" deviceset="AGND" device=""/>
 <part name="FB12" library="wuerth-elektronik" deviceset="WE-CBF" device="_0603"/>
 <part name="FB13" library="wuerth-elektronik" deviceset="WE-CBF" device="_0603"/>
 <part name="R8" library="m64library" deviceset="R-US_" device="R0402" value="22"/>
@@ -19711,15 +19606,11 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 <text x="121.92" y="27.94" size="2.54" layer="91">See Note 2)</text>
 <frame x1="-335.28" y1="-154.94" x2="342.9" y2="281.94" columns="8" rows="5" layer="91"/>
 <text x="-152.4" y="180.34" size="1.778" layer="91">2.4 Connector</text>
-<text x="-165.1" y="83.82" size="1.778" layer="91">Gain=20dB</text>
-<text x="-165.1" y="78.74" size="1.778" layer="91">NF=~2.5dB</text>
-<text x="-165.1" y="88.9" size="1.778" layer="91">OIP3 = 18.1dBm</text>
 <text x="-53.34" y="-116.84" size="1.778" layer="91">Test Point</text>
 <text x="-2.54" y="109.22" size="1.27" layer="91">N.C.</text>
 <text x="-2.54" y="106.68" size="1.27" layer="91">N.C.</text>
 <text x="-2.54" y="83.82" size="1.27" layer="91">N.C.</text>
 <text x="-2.54" y="81.28" size="1.27" layer="91">N.C.</text>
-<text x="-223.52" y="83.82" size="2.54" layer="91">433 - 1020 MHz</text>
 <text x="226.06" y="-99.06" size="2.1844" layer="91">NOV, 2018</text>
 </plain>
 <instances>
@@ -19792,7 +19683,6 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 <instance part="H6" gate="G$1" x="104.14" y="-129.54"/>
 <instance part="FID7" gate="A" x="129.54" y="-116.84"/>
 <instance part="FID8" gate="A" x="142.24" y="-116.84"/>
-<instance part="C31" gate="G$1" x="-127" y="66.04" rot="R90"/>
 <instance part="SUPPLY4" gate="G$1" x="33.02" y="152.4"/>
 <instance part="SUPPLY10" gate="G$1" x="50.8" y="149.86"/>
 <instance part="SUPPLY26" gate="G$1" x="66.04" y="149.86"/>
@@ -19853,14 +19743,6 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 </instance>
 <instance part="SUPPLY100" gate="G$1" x="-66.04" y="93.98"/>
 <instance part="C33" gate="G$1" x="-81.28" y="111.76" rot="R90"/>
-<instance part="Q1" gate="G$1" x="-157.48" y="66.04"/>
-<instance part="R12" gate="G$1" x="-134.62" y="129.54" rot="R90"/>
-<instance part="C34" gate="G$1" x="-121.92" y="116.84" rot="MR90"/>
-<instance part="C35" gate="G$1" x="-121.92" y="104.14" rot="MR90"/>
-<instance part="SUPPLY101" gate="G$1" x="-160.02" y="48.26"/>
-<instance part="SUPPLY110" gate="G$1" x="-157.48" y="53.34"/>
-<instance part="SUPPLY112" gate="G$1" x="-111.76" y="96.52"/>
-<instance part="SUPPLY113" gate="G$1" x="-109.22" y="111.76"/>
 <instance part="L15" gate="G$1" x="-279.4" y="53.34"/>
 <instance part="SUPPLY137" gate="G$1" x="-279.4" y="38.1"/>
 <instance part="J6" gate="A" x="-119.38" y="180.34" smashed="yes" rot="MR0">
@@ -19875,7 +19757,6 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 <attribute name="NAME" x="-20.32" y="-106.68" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-12.7" y="-104.14" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="C38" gate="G$1" x="-182.88" y="66.04" rot="R90"/>
 <instance part="SUPPLY140" gate="G$1" x="-71.12" y="43.18"/>
 <instance part="FB4" gate="G$1" x="261.62" y="160.02"/>
 <instance part="FB5" gate="G$1" x="261.62" y="111.76"/>
@@ -19907,17 +19788,7 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 <instance part="SUPPLY153" gate="G$1" x="-114.3" y="160.02"/>
 <instance part="SUPPLY154" gate="G$1" x="-116.84" y="154.94"/>
 <instance part="SUPPLY155" gate="G$1" x="-111.76" y="152.4"/>
-<instance part="L2" gate="G$1" x="-144.78" y="139.7" rot="R90"/>
-<instance part="L3" gate="G$1" x="-134.62" y="86.36" rot="R180"/>
 <instance part="TP2" gate="G$1" x="40.64" y="-12.7"/>
-<instance part="FLT2" gate="A" x="-213.36" y="63.5" smashed="yes">
-<attribute name="NAME" x="-223.52" y="78.74" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-223.52" y="76.2" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY115" gate="G$1" x="-203.2" y="40.64"/>
-<instance part="SUPPLY126" gate="G$1" x="-208.28" y="40.64"/>
-<instance part="SUPPLY127" gate="G$1" x="-213.36" y="40.64"/>
-<instance part="SUPPLY156" gate="G$1" x="-218.44" y="40.64"/>
 <instance part="FB12" gate="G$1" x="254" y="228.6" rot="R90"/>
 <instance part="FB13" gate="G$1" x="254" y="185.42" rot="R90"/>
 </instances>
@@ -20490,28 +20361,6 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 <wire x1="-66.04" y1="96.52" x2="-66.04" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-160.02" y1="50.8" x2="-160.02" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="4"/>
-<pinref part="SUPPLY101" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<wire x1="-157.48" y1="55.88" x2="-157.48" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="2"/>
-<pinref part="SUPPLY110" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<wire x1="-111.76" y1="104.14" x2="-111.76" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="104.14" x2="-119.38" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="1"/>
-<pinref part="SUPPLY112" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<wire x1="-119.38" y1="116.84" x2="-109.22" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="116.84" x2="-109.22" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="C34" gate="G$1" pin="1"/>
-<pinref part="SUPPLY113" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
 <pinref part="L15" gate="G$1" pin="P$2"/>
 <pinref part="SUPPLY137" gate="G$1" pin="AGND"/>
 <wire x1="-279.4" y1="40.64" x2="-279.4" y2="45.72" width="0.1524" layer="91"/>
@@ -20599,26 +20448,6 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 <pinref part="J6" gate="A" pin="GND@3"/>
 <wire x1="-116.84" y1="157.48" x2="-116.84" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY154" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="FLT2" gate="A" pin="GND@4"/>
-<pinref part="SUPPLY115" gate="G$1" pin="AGND"/>
-<wire x1="-203.2" y1="43.18" x2="-203.2" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="FLT2" gate="A" pin="GND@3"/>
-<pinref part="SUPPLY126" gate="G$1" pin="AGND"/>
-<wire x1="-208.28" y1="43.18" x2="-208.28" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="FLT2" gate="A" pin="GND@2"/>
-<pinref part="SUPPLY127" gate="G$1" pin="AGND"/>
-<wire x1="-213.36" y1="43.18" x2="-213.36" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="FLT2" gate="A" pin="GND@1"/>
-<pinref part="SUPPLY156" gate="G$1" pin="AGND"/>
-<wire x1="-218.44" y1="43.18" x2="-218.44" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="45.72" y1="157.48" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
@@ -20779,35 +20608,6 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 <wire x1="-71.12" y1="111.76" x2="-76.2" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+5V" class="0">
-<segment>
-<wire x1="-160.02" y1="139.7" x2="-154.94" y2="139.7" width="0.1524" layer="91"/>
-<label x="-160.02" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L2" gate="G$1" pin="P$1"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="-134.62" y1="124.46" x2="-134.62" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="C34" gate="G$1" pin="2"/>
-<wire x1="-134.62" y1="116.84" x2="-134.62" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-134.62" y1="104.14" x2="-134.62" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-127" y1="116.84" x2="-134.62" y2="116.84" width="0.1524" layer="91"/>
-<junction x="-134.62" y="116.84"/>
-<pinref part="C35" gate="G$1" pin="2"/>
-<wire x1="-127" y1="104.14" x2="-134.62" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-134.62" y="104.14"/>
-<pinref part="L3" gate="G$1" pin="P$2"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="C28" gate="G$1" pin="2"/>
-<pinref part="FLT2" gate="A" pin="IN"/>
-<wire x1="-238.76" y1="66.04" x2="-231.14" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="C33" gate="G$1" pin="1"/>
@@ -20815,13 +20615,6 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 <wire x1="-96.52" y1="111.76" x2="-96.52" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="J6" gate="A" pin="RF"/>
 <wire x1="-96.52" y1="182.88" x2="-104.14" y2="182.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="1"/>
-<pinref part="C38" gate="G$1" pin="2"/>
-<wire x1="-172.72" y1="66.04" x2="-177.8" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -20966,25 +20759,6 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 <pinref part="FB11" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$44" class="0">
-<segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="-137.16" y1="139.7" x2="-134.62" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="-134.62" y1="139.7" x2="-134.62" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="L2" gate="G$1" pin="P$2"/>
-</segment>
-</net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="3"/>
-<wire x1="-144.78" y1="66.04" x2="-134.62" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-134.62" y1="76.2" x2="-134.62" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="L3" gate="G$1" pin="P$1"/>
-<pinref part="C31" gate="G$1" pin="1"/>
-<wire x1="-129.54" y1="66.04" x2="-134.62" y2="66.04" width="0.1524" layer="91"/>
-<junction x="-134.62" y="66.04"/>
-</segment>
-</net>
 <net name="N$46" class="0">
 <segment>
 <pinref part="T1" gate="G$1" pin="UBAL"/>
@@ -20995,9 +20769,9 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 <wire x1="-96.52" y1="66.04" x2="-109.22" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-109.22" y1="66.04" x2="-109.22" y2="63.5" width="0.1524" layer="91"/>
 <junction x="-96.52" y="66.04"/>
-<pinref part="C31" gate="G$1" pin="2"/>
-<wire x1="-109.22" y1="66.04" x2="-121.92" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-109.22" y="66.04"/>
+<pinref part="C28" gate="G$1" pin="2"/>
+<wire x1="-238.76" y1="66.04" x2="-109.22" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ATRF_DVDD" class="0">
@@ -21050,13 +20824,6 @@ clipped sine wave signals which shall be DC-coupled and ground referred. </text>
 <junction x="233.68" y="236.22"/>
 <pinref part="FB12" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="236.22" x2="251.46" y2="233.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="C38" gate="G$1" pin="1"/>
-<pinref part="FLT2" gate="A" pin="OUT"/>
-<wire x1="-185.42" y1="66.04" x2="-190.5" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V3" class="0">
