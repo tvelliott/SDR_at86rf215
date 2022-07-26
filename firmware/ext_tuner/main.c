@@ -68,12 +68,8 @@
 #define SPIx_MOSI_SOURCE               GPIO_PinSource15
 #define SPIx_MOSI_AF                   GPIO_AF_SPI2
 
-//freq can be from 3MHz to 1090 MHz
-//IF passband is 905-925.  images may appear in this range , TODO: should try tuning LO below the filter to push freq up into the IF for >900 MHz
-
 #define FREQ_OFFSET ( 0.002065 )
 double ppm = 2.766;
-
 
 #define TRANSITION_FREQ (500.0)
 double if_freq = 954.5;
@@ -82,7 +78,6 @@ double if_freq = 954.5;
 void assert_param(int pass);
 __ALIGN_BEGIN USB_OTG_CORE_HANDLE  USB_OTG_dev __ALIGN_END;
 
-    uint8_t aTxBuffer[BUFFERSIZE] = "SPI Master/Slave : Communication between two SPI using Interrupts";
 volatile uint8_t aRxBuffer [BUFFERSIZE];
 volatile uint8_t ubRxIndex = 0;
 volatile uint8_t ubTxIndex = 0;
