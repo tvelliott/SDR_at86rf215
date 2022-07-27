@@ -10,9 +10,10 @@ Firmware and HDL was written and operational in 2018. It supports stand-alone re
 <BR>Then type 'make'
 <BR>
 <BR>
-To compile the verilog code and place-route for the FPGA, you will need to install project ice-storm and nextpnr. In order to run the testbench for the DDR verilog code, you will also need to install iverilog and gtkwave.
+To compile the verilog code and place-route for the FPGA, you will need to install project ice-storm,Yosys, and nextpnr. In order to run the testbench for the DDR verilog code, you will also need to install iverilog and gtkwave.
 <BR>
 <BR>https://github.com/YosysHQ/icestorm
+<BR>https://github.com/YosysHQ/yosys
 <BR>https://github.com/YosysHQ/nextpnr
 <BR>https://github.com/steveicarus/iverilog
 <BR>https://github.com/gtkwave/gtkwave
