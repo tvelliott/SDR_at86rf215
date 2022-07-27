@@ -1,6 +1,5 @@
 # SDR_at86rf215
-SDR design based on the AT86RF215 transceiver with IQ LVDS / FPGA interface. Ethernet is 100Mbps.
-Firmware and HDL was written and operational in 2018. It supports stand-alone reception of P25. The firmware implementation is P25 P1 only. It does not currently do P25 P2 or P25 trunk-tracking, but the hardware is capable.
+SDR design based on the AT86RF215 transceiver with IQ LVDS / FPGA DDR (dual-data-rate) interface. The quadrature data is clocked on the rising *and* falling edges. Ethernet is 100Mbps. The firmware and HDL was written and operational in 2018. It supports stand-alone reception of P25. The firmware implementation is P25 P1 only. It does not currently do P25 P2 or P25 trunk-tracking, but the hardware is capable. It can also be used with SDR software over Ethernet such as GQRX with modified RTL-TCP drivers (mods allow 16-bit samples).
 
 <BR>To compile:
 <BR>install the gcc arm toolchain version gcc-arm-none-eabi-7-2018-q2-update/   
